@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Registration page</title>
+    <link rel="stylesheet" href="style.css">
+                <!-- boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>  
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <h2 class="logo">Nift Swift</h2>
+        <nav class="nav">
+            <ul class="nav-items">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">Products</a>
+                    <a href="#" class="nav-link">Services</a>
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="login-sign-header">
+            <button type="button" class="button " id="signupbtn">Signup</button>
+            <button type="button" class="button login" id="loginbtn">login</button>
+        </div>
+    </header>
+
+    <!-- Home -->
+<section class="home">
+<div class="form-container" >
+    <i class='bx bx-x form-close'></i>
+     <!-- login form -->
+    <div class="form login-form">
+        <form action="#" >
+            <h2> Login</h2>
+            <div class="input-box">
+                <i class='bx bx-envelope'></i>
+                <input type="=email" required placeholder="Enter your mail">
+            </div>
+            <div class="input-box">
+                <i class='bx bx-lock-alt' ></i>
+                <input type="password" required placeholder="Enter your password">
+                <i class='bx bx-hide bx-rotate-180 pw-hide'></i>
+                <i class='bx bx-show bx-rotate-180 pw-show' ></i>
+            </div>
+            <div class="input-box">
+                <i class='bx bx-lock-alt' ></i>
+                <input type="password" required placeholder="Confirm your password">
+                <i class='bx bx-hide bx-rotate-180 pw-hide'></i>
+                <i class='bx bx-show bx-rotate-180 pw-show'></i>
+            </div>
+            <div class="password-check">
+                <span class="checkbox">
+                    <input type="checkbox">
+                    <label for="check">Remember Me</label>
+                </span>
+                <a href="#" class="forgot-w">Forgot Password?</a>
+            </div>
+            <button class="button">Login Now</button>
+            <div class="login-sign-up">
+                <h4>Dont have an account?</h4>
+                <a href="#" id="signup-form">Sign up</a>
+            </div>
+        </form>
+     </div>
+
+     <!-- sign-up -->
+    <div class="form sign-up-form" >
+    <form action="#" >
+        <h2>Sign up</h2>
+        <div class="input-box">
+            <i class='bx bx-envelope'></i>
+            <input type="=email" required placeholder="Enter your mail">
+        </div>
+        <div class="input-box">
+            <i class='bx bx-lock-alt' ></i>
+            <input type="password" required placeholder="Create password">
+            <i class='bx bx-hide bx-rotate-180 pw-hide'></i>
+            <i class='bx bx-show bx-rotate-180 pw-show' ></i>
+        </div>
+        <div class="input-box">
+            <i class='bx bx-lock-alt' ></i>
+            <input type="password" required placeholder="Confirm password">
+            <i class='bx bx-hide bx-rotate-180 pw-hide'></i>
+            <i class='bx bx-show bx-rotate-180 pw-show' ></i>
+        </div>
+    
+    <button class="button">Signup Now</button>
+    <div class="login-sign-up">
+        <h4>Already have an account?</h4>
+        <a href="#" id="login-form">login</a>
+    </div>
+    </form>
+ </div>
+</div>
+
+</section>
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

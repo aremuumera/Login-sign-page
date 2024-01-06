@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&family=Syne:wght@400;500;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.header{
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    z-index: 100;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+}
+.nav{
+    margin: 0 auto;
+}
+ .nav-item{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    height: 100%;
+    color: #fff !important;
+    gap: 30px;
+    font-size: 20px;
+} 
+.nav-item  a{
+    color: #fff;
+}
+.logo{
+    font-size: 30px;
+    color: #fff;
+}
+.button{
+    color: #fff;
+    padding: 6px 24px;
+    border:2px solid #fff;
+    background: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.button:active {
+    transform: scale(1.1);
+}
+.login-sign-header{
+    display: flex;
+    gap: 25px;
+}
+  /* Home */
+.home{
+    position: relative;
+    height: 100vh ;
+    width: 100%;
+    background: url(./assets/wallpaperflare.com_wallpaper\ \(4\).jpg);
+    background-size:cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.form-container{
+    position: absolute !important;
+    top: 30%;
+    left: 40%;
+    transform:translate(-50%, -50%), scale(1.2) !important;
+    z-index: 10000 !important;
+    background: #fff;
+    /* background: #0000!important; */
+    /* backdrop-filter: blur(40px) !important; */
+    padding: 25px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.3);
+    max-width: 350px;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;   
+   transition: all 0.5s ease-in-out;
+}
+ .show .form-container {
+    opacity: 1;
+    pointer-events: auto;   
+    transform:translate(-50% -50%) scale(1.2);
+}
+.home::before {
+    content: '';
+    position: absolute !important;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6)!important;
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .5s ease-in-out;
+}
+.home.show::before{
+    opacity: 1;
+    pointer-events: auto;
+    }
+.form-close{
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    color: #000;
+    font-size: 22px;
+    cursor: pointer;
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin-top: 30px ;
+    display: flex;
+    align-items: center;
+    border-bottom: 1.5px solid #aaaaaa;
+    gap: 10px;
+}
+
+.input-box input{
+    height: 100%;
+    width: 100%;
+    border:none;
+    border-bottom: 1.5px solid #aaaaaa;
+    outline: none;
+}
+.form-container{
+    font-size: 22px;
+    color: #0b0217;
+    text-align: center;
+}
+.input-box .pw-show{
+    display: none;
+}
+
+.form h2{
+    padding-top: 30px;
+}
+.password-check{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.checkbox input{
+    accent-color: #000000 ;
+}
+.checkbox label{
+    font-size: 15px;
+    user-select: none;
+}
+.password-check a{
+    font-size: 15px;
+}
+.form-container button{
+    background: #000000;
+    color: #fff;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 30px;
+}
+.login-sign-up{
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+.login-sign-up h4{
+    font-size: 15px;
+}
+.login-sign-up a{
+    font-size: 15px;
+    color: mix(#9845E8, #000000, 50%);
+}
+.sign-up-form{
+    display: none;
+}
+.active .sign-up-form{
+    display: block;
+
+}
+.active .login-form{
+    display: none;
+
+}
